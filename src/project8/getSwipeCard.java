@@ -8,7 +8,7 @@ import java.util.Random;
 
 /**
  *
- * @author Ali
+ * @author Yousef
  */
 public class getSwipeCard extends javax.swing.JFrame {
 
