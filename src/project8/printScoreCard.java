@@ -6,7 +6,7 @@ package project8;
 
 /**
  *
- * @author Ali
+ * @author Yousef
  */
 public class printScoreCard extends javax.swing.JFrame {
 
