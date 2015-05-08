@@ -4,6 +4,8 @@
  */
 package project8;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Yousef
@@ -190,13 +192,28 @@ public class GameStart extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        printScoreCard PC = new printScoreCard(swipeObject , tscore);
-//        this.setVisible(false);
-        PC.setVisible(true);
         
         
-        System.out.println("first name is  "+ swipeObject.getFirstname()  );
-        System.out.println("last name is  "+ swipeObject.getLastName()  );
+                        int dialogButton = JOptionPane.YES_NO_OPTION;
+                int dialogResult = JOptionPane.showConfirmDialog(this, "Do you want to end the Game. ?", "Warning!!! game will be ended ", dialogButton);
+                if(dialogResult == 0) {
+                  System.out.println("Yes option");
+                  
+                printScoreCard PC = new printScoreCard(swipeObject , tscore);
+       //        this.setVisible(false);
+               PC.setVisible(true);
+               System.out.println("first name is  "+ swipeObject.getFirstname()  );
+               System.out.println("last name is  "+ swipeObject.getLastName()  );
+
+                  
+                } else {
+                  System.out.println("No Option");
+                } 
+
+
+        
+        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
