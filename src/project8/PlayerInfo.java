@@ -18,16 +18,12 @@ public class PlayerInfo {
             lastName =null;
         }
     
-    
-    
         public PlayerInfo(String fn , String ln){
         
             firstName = fn;
             lastName = ln;
         
         }
-        
-        
         
         public String getFirstname(){
             return firstName;

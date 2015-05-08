@@ -165,6 +165,11 @@ public class GameStart extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         
+        if(jTextField1.getText().toString().equals("") == true  ||  jTextField2.getText().toString().equals("") == true ){
+            
+              jLabel4.setText(" The swipe code or strokes are not entered correctly !!! ");
+        }
+        else{
         int sc = Integer.parseInt(jTextField1.getText().toString());
         if(sc == swipeObject.getSwipeCard()){
             int strokes = Integer.parseInt(jTextField2.getText().toString());
@@ -177,6 +182,10 @@ public class GameStart extends javax.swing.JFrame {
         }else{
             jLabel4.setText(" The swipe code you entered in invalid !!! ");
         }
+        
+        
+        }
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
